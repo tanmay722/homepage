@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-hyphenate {
+  hyphens: auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+:root {
+  font-family: "Poppins", sans-serif, "Times New Roman", Times, serif;
+  color-scheme: dark;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #0a0a0a;
+  /* background-color: #000000; */
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+
+ul,
+li,
+a {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+footer,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide images inside descriptions */
+/* .line-clamp-2 img,
+table {
+  display: none;
+} */
