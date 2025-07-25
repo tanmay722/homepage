@@ -1,0 +1,129 @@
+.finaquity-section {
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.finaquity-content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  padding: 10px 20px;
+}
+
+.finaquity-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(5px);
+}
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  z-index: 5;
+}
+
+.tilted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.product-overview {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: white;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: #d1d5db;
+  margin: 10px auto 0;
+  max-width: 750px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-heading {
+    font-size: 3rem;
+  }
+
+  .subtext {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .product-overview {
+    font-size: 1rem;
+  }
+
+  .finaquity-content {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .subtext {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+
+  .product-overview {
+    font-size: 0.9rem;
+  }
+
+  .finaquity-content {
+    padding: 0 10px;
+  }
+}

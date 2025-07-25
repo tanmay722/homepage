@@ -1,0 +1,229 @@
+.progress-tracking-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 60px 120px;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.left-section {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.main-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.subtext_ {
+  font-size: 1.2rem;
+  color: #c0c0c0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.stat-block h2 {
+  font-size: 3.3rem;
+  margin: 0;
+  font-weight: 900;
+}
+
+.stat-block p {
+  color: #aaa;
+  font-size: 1rem;
+  margin: 0.2rem 0 0 0;
+  font-weight: 500;
+}
+
+.divider {
+  width: 2px;
+  height: 60px;
+  background-color: #444;
+  margin: 0 2rem;
+}
+
+.button-trial {
+  margin-top: 1.8rem;
+}
+
+.cta-button-progress {
+  width: 40%;
+  min-width: 200px;
+  padding: 22px 13px;
+  background-color: #00d26a;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.cta-button-progress:hover {
+  background-color: #00b35a;
+  color: white;
+  box-shadow: 0 0 10px #dcc74e5c, 0 0 20px #dcc74e5c, 0 0 40px #dcc74e5c,
+    0 0 50px #dcc74e5c;
+  animation: glowText 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  }
+}
+
+.right-section {
+  position: relative;
+  flex: 1;
+  max-width: 45%;
+  min-width: 300px;
+}
+
+.timeline-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .progress-tracking-container {
+    padding: 40px 60px;
+    gap: 3rem;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+  }
+
+  .stat-block h2 {
+    font-size: 2.8rem;
+  }
+
+  .divider {
+    margin: 0 1.5rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .progress-tracking-container {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .left-section,
+  .right-section {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .subtext_ {
+    font-size: 1.1rem;
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .stat-block h2 {
+    font-size: 2.5rem;
+  }
+
+  .divider {
+    height: 50px;
+    margin: 0 1rem;
+  }
+
+  .cta-button-progress {
+    width: 60%;
+    min-width: 250px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .progress-tracking-container {
+    padding: 20px 15px;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .subtext_ {
+    font-size: 1rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .divider {
+    width: 60px;
+    height: 2px;
+    margin: 0;
+  }
+
+  .stat-block h2 {
+    font-size: 2rem;
+  }
+
+  .stat-block p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button-progress {
+    width: 80%;
+    min-width: unset;
+    padding: 18px 20px;
+  }
+}

@@ -1,0 +1,29 @@
+/* LightScrollEffect.css */
+
+.page {
+  background: #000;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.curved-light {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 300px;
+  border: 2px solid red; /* for debugging */
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(20px) brightness(5);
+}
+
+.page-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 200px;
+  text-align: center;
+}

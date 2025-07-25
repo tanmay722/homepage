@@ -1,0 +1,527 @@
+.trading-feature {
+  background: black;
+  min-height: 100vh;
+  padding: 60px 40px;
+  color: white;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+
+.badge_ {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 10px 0 20px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: white;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-width: 700px;
+  width: 100%;
+}
+
+.feature-card.item-a,
+.feature-card.item-b,
+.feature-card.item-c {
+  max-height: 800px;
+  height: 500px;
+}
+
+.feature-card.item-e {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Grid Layout */
+.item-a {
+  grid-column: 1 / 3;
+}
+.item-b {
+  grid-column: 3 / 5;
+}
+.item-c {
+  grid-column: 5 / 7;
+}
+.item-d {
+  grid-column: 1 / 4;
+}
+.item-e {
+  grid-column: 4 / 7;
+}
+
+/* Card Components */
+.card-header,
+.card-content {
+  padding: 20px;
+}
+
+.card-header {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content.Signals,
+.card-content.broker {
+  margin-top: 45px;
+}
+
+.card-header.risk {
+  height: 100%;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card-description {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Chat Interface */
+.chat-interface {
+  width: 100%;
+  max-width: 300px;
+}
+
+.chat-message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-left: 25px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #4f46e5, #7c3aed);
+  margin-right: 12px;
+}
+
+.message-bubble {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  height: 20px;
+  flex: 1;
+  max-width: 180px;
+  margin-right: 10px;
+}
+
+.chat-input {
+  display: flex;
+  width: 100%;
+  gap: 100px;
+  max-width: 290px;
+}
+
+.star-input {
+  margin-left: 10px;
+}
+
+.custom-class-input {
+  margin-top: 20px;
+  margin: 20px auto 0;
+}
+
+.chat-input-text {
+  flex: 1;
+  color: white;
+  font-size: 14px;
+}
+
+.send-button {
+  width: 24px;
+  height: 24px;
+  background: #4f46e5;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Broker Interface */
+.broker-interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 230px;
+  height: 213px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search-bar {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.connect-button {
+  background: #353535;
+  color: white;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.star-button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Strategy Interface */
+.strategy-interface {
+  width: 100%;
+  max-width: 300px;
+}
+
+.stock-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.stock-item-positive {
+  background-color: #353535;
+}
+
+.ltstock {
+  background-color: #353535;
+  border-radius: 6px;
+}
+
+.triangle-up {
+  margin-right: 8px;
+  font-size: 10px;
+  color: #22c55e;
+}
+
+.triangle-down {
+  margin-right: 8px;
+  font-size: 10px;
+  color: #ef4444;
+}
+
+.dropdown-arrow {
+  margin-left: auto;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.stock-details {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mark-chart {
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 3px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Analytics Interface */
+.analytics-interface,
+.risk-interface {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.risk-interface {
+  height: 100%;
+}
+
+.filters-section {
+  flex: 1;
+  max-width: 120px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  padding: 5px;
+  text-align: center;
+}
+
+.filter-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 4px 6px;
+  margin: 6px 0;
+  font-size: 11px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.chart-section {
+  flex: 2;
+  display: flex;
+  gap: 16px;
+}
+
+.efficiency-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 6px;
+  padding: 15px 20px;
+  text-align: center;
+  line-height: 1;
+}
+
+.titlep {
+  display: flex;
+  justify-content: space-between;
+}
+
+.efficiency-chart,
+.performance-metrics {
+  flex: 1;
+}
+
+.performance-metrics {
+  max-width: 110px;
+  width: 110px;
+}
+
+.chart-title {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.description_ {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.percentage {
+  font-size: 18px;
+  color: #22c55e;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.metric-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.metric-title {
+  font-size: 15px;
+}
+
+.metric-subtitle,
+.metric-note {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 24px;
+  color: #22c55e;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.export-btn {
+  border-radius: 4px;
+  font-size: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Risk Interface */
+.risk-report {
+  max-width: 300px;
+  width: 140px;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.risk-image {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.report-title {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 16px;
+}
+
+.report-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.report-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  height: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item-a,
+  .item-b,
+  .item-c,
+  .item-d,
+  .item-e {
+    grid-column: span 1;
+  }
+
+  .analytics-interface,
+  .risk-interface {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .chart-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .trading-feature {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trading-feature {
+    padding: 30px 15px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .badge_ {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+
+  .card-header {
+    min-height: 150px;
+  }
+
+  .feature-card.item-a,
+  .feature-card.item-b,
+  .feature-card.item-c {
+    height: auto;
+    max-height: none;
+  }
+}
