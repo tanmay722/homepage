@@ -1,0 +1,240 @@
+.longterm-section {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.longterm-badge {
+  display: inline-block;
+  background-color: #1a1a1a;
+  color: #ccc;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.longterm-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.longterm-subtitle {
+  color: white;
+  font-size: 1rem;
+  margin: 0 auto 40px;
+  max-width: 700px;
+  font-weight: 600;
+}
+
+.longterm-wrapper-box {
+  background-color: black;
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 40px rgba(100, 100, 255, 0.05);
+}
+
+.longterm-inner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  padding: 50px;
+}
+
+.longterm-inner-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: white;
+  transform: translateX(-1px);
+}
+
+.longterm-inner-grid::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background-color: white;
+  transform: translateY(-1px);
+}
+
+.longterm-card {
+  background-color: #111;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(130, 130, 255, 0.1);
+}
+
+.longterm-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background-color: #222;
+  border: 2px solid rgb(192, 8, 212);
+}
+
+.longterm-card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.longterm-card-description {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.longterm-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+}
+
+.card-ai {
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+}
+
+.card-mutual {
+  border: 1px solid silver;
+  height: 91%;
+}
+
+.card-rebalance {
+  border-bottom: 1px solid silver;
+  border-left: 1px solid silver;
+}
+
+.card-macro {
+  border-bottom: 1px solid silver;
+  border-right: 1px solid silver;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .longterm-title {
+    font-size: 2.5rem;
+  }
+
+  .longterm-inner-grid {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .longterm-section {
+    padding: 40px 15px;
+  }
+
+  .longterm-title {
+    font-size: 2rem;
+  }
+
+  .longterm-inner-grid {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .longterm-inner-grid::before {
+    display: none;
+  }
+
+  .longterm-inner-grid::after {
+    left: 0;
+    right: 0;
+    top: 25%;
+    height: 2px;
+  }
+
+  .longterm-card {
+    margin-bottom: 20px;
+  }
+
+  .card-ai {
+    border: 1px solid silver;
+    border-bottom: none;
+  }
+
+  .card-mutual {
+    border: 1px solid silver;
+    border-bottom: none;
+    height: auto;
+  }
+
+  .card-rebalance {
+    border: 1px solid silver;
+    border-bottom: none;
+  }
+
+  .card-macro {
+    border: 1px solid silver;
+  }
+
+  .longterm-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .longterm-title {
+    font-size: 1.75rem;
+  }
+
+  .longterm-inner-grid {
+    padding: 20px;
+  }
+
+  .longterm-card {
+    padding: 15px;
+  }
+
+  .longterm-card-title {
+    font-size: 1.1rem;
+  }
+
+  .longterm-footer {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+}
+
+.longterm-portfolio-container {
+  width: 100%;
+  height: 370px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  /* padding: 3rem; */
+  overflow: hidden;
+  position: relative;
+  border: 2px solid rgb(192, 8, 212);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 7), inset 0 0 200px rgba(0, 0, 0, 9),
+    inset 0 0 300px rgba(0, 0, 0, 9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.longterm-portfolio-container .toggles-wrapper {
+  scale: 0.8;
+}

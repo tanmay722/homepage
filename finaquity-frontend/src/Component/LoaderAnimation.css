@@ -1,0 +1,26 @@
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.core-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* Remove fixed width/height to allow inline style to take control */
+}
+
+.thumb-icon {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  max-width: 100px; /* fallback limit */
+  max-height: 100px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}

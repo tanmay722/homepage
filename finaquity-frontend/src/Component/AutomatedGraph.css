@@ -1,0 +1,122 @@
+/* Dashboard Container */
+.dashboard-container {
+  background: rgb(31, 29, 29);
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 300px;
+  margin: auto auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  max-height: 254px;
+  box-shadow: 0 15px 85px rgba(186, 164, 235, 0.4),
+    0 -15px 85px rgba(186, 164, 235, 0.4), 2px 0 8px rgba(186, 164, 235, 0.1),
+    -2px 0 8px rgba(186, 164, 235, 0.1);
+}
+
+/* Card Styles */
+.card {
+  background: linear-gradient(135deg, #8b5fbf 0%, #b794f6 100%);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 24px rgba(139, 95, 191, 0.3);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header-graph {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  height: 32px;
+  width: 100%;
+  gap: 10px;
+}
+
+.icon-container {
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  flex-shrink: 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  justify-content: center;
+}
+
+.card-title {
+  height: 8px;
+  width: 100px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+.card-subtitle {
+  height: 6px; /* Increased from 5px to 6px */
+  width: 70px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+/* Chart Styles */
+.chart-container {
+  /* background: rgba(14, 14, 14, 1); */
+  border-radius: 12px;
+  padding: 12px;
+  height: 130px;
+  backdrop-filter: blur(10px);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .card {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .chart-container {
+    padding: 16px;
+    height: 180px;
+  }
+}
+
+/* Animation for smooth loading */
+.card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.chart-container {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

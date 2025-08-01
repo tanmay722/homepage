@@ -1,0 +1,527 @@
+.shorttrade-feature {
+  background: black;
+  min-height: 100vh;
+  padding: 60px 40px;
+  color: white;
+}
+
+/* Header Section */
+.shorttrade-header {
+  text-align: center;
+  margin-bottom: 80px;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+}
+
+.shorttrade-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.shorttrade-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 10px 0 20px;
+}
+
+.shorttrade-subtitle {
+  font-size: 16px;
+  color: white;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+/* Features Grid */
+.shorttrade-features-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.shorttrade-feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-width: 700px;
+  width: 100%;
+}
+
+.shorttrade-feature-card.shorttrade-item-a,
+.shorttrade-feature-card.shorttrade-item-b,
+.shorttrade-feature-card.shorttrade-item-c {
+  max-height: 800px;
+  height: 500px;
+}
+
+.shorttrade-feature-card.shorttrade-item-e {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Grid Layout */
+.shorttrade-item-a {
+  grid-column: 1 / 3;
+}
+.shorttrade-item-b {
+  grid-column: 3 / 5;
+}
+.shorttrade-item-c {
+  grid-column: 5 / 7;
+}
+.shorttrade-item-d {
+  grid-column: 1 / 4;
+}
+.shorttrade-item-e {
+  grid-column: 4 / 7;
+}
+
+/* Card Components */
+.shorttrade-card-header,
+.shorttrade-card-content {
+  padding: 20px;
+}
+
+.shorttrade-card-header {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shorttrade-card-content.shorttrade-Signals,
+.shorttrade-card-content.shorttrade-broker {
+  margin-top: 45px;
+}
+
+.shorttrade-card-header.shorttrade-risk {
+  height: 100%;
+}
+
+.shorttrade-card-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.shorttrade-card-description {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Chat Interface */
+.shorttrade-chat-interface {
+  width: 100%;
+  max-width: 300px;
+}
+
+.shorttrade-chat-message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-left: 25px;
+}
+
+.shorttrade-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #4f46e5, #7c3aed);
+  margin-right: 12px;
+}
+
+.shorttrade-message-bubble {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  height: 20px;
+  flex: 1;
+  max-width: 180px;
+  margin-right: 10px;
+}
+
+.shorttrade-chat-input {
+  display: flex;
+  width: 100%;
+  gap: 100px;
+  max-width: 290px;
+}
+
+.shorttrade-star-input {
+  margin-left: 10px;
+}
+
+.shorttrade-custom-class-input {
+  margin-top: 20px;
+  margin: 20px auto 0;
+}
+
+.shorttrade-chat-input-text {
+  flex: 1;
+  color: white;
+  font-size: 14px;
+}
+
+.shorttrade-send-button {
+  width: 24px;
+  height: 24px;
+  background: #4f46e5;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Broker Interface */
+.shorttrade-broker-interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 230px;
+  height: 213px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.shorttrade-search-bar {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.shorttrade-connect-button {
+  background: #353535;
+  color: white;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.shorttrade-star-button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Strategy Interface */
+.shorttrade-strategy-interface {
+  width: 100%;
+  max-width: 300px;
+}
+
+.shorttrade-stock-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.shorttrade-stock-item-positive {
+  background-color: #353535;
+}
+
+.shorttrade-ltstock {
+  background-color: #353535;
+  border-radius: 6px;
+}
+
+.shorttrade-triangle-up {
+  margin-right: 8px;
+  font-size: 10px;
+  color: #22c55e;
+}
+
+.shorttrade-triangle-down {
+  margin-right: 8px;
+  font-size: 10px;
+  color: #ef4444;
+}
+
+.shorttrade-dropdown-arrow {
+  margin-left: auto;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.shorttrade-stock-details {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.shorttrade-detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.shorttrade-mark-chart {
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 3px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Analytics Interface */
+.shorttrade-analytics-interface,
+.shorttrade-risk-interface {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.shorttrade-risk-interface {
+  height: 100%;
+}
+
+.shorttrade-filters-section {
+  flex: 1;
+  max-width: 120px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  padding: 5px;
+  text-align: center;
+}
+
+.shorttrade-filter-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 4px 6px;
+  margin: 6px 0;
+  font-size: 11px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.shorttrade-chart-section {
+  flex: 2;
+  display: flex;
+  gap: 16px;
+}
+
+.shorttrade-efficiency-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 6px;
+  padding: 15px 20px;
+  text-align: center;
+  line-height: 1;
+}
+
+.shorttrade-titlep {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shorttrade-efficiency-chart,
+.shorttrade-performance-metrics {
+  flex: 1;
+}
+
+.shorttrade-performance-metrics {
+  max-width: 110px;
+  width: 110px;
+}
+
+.shorttrade-chart-title {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.shorttrade-description_ {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.shorttrade-percentage {
+  font-size: 18px;
+  color: #22c55e;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.shorttrade-metric-box {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shorttrade-metric-title {
+  font-size: 15px;
+}
+
+.shorttrade-metric-subtitle,
+.shorttrade-metric-note {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.shorttrade-metric-value {
+  font-size: 24px;
+  color: #22c55e;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.shorttrade-export-btn {
+  border-radius: 4px;
+  font-size: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Risk Interface */
+.shorttrade-risk-report {
+  max-width: 300px;
+  width: 140px;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.shorttrade-risk-image {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.shorttrade-report-title {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 16px;
+}
+
+.shorttrade-report-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shorttrade-report-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  height: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .shorttrade-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shorttrade-item-a,
+  .shorttrade-item-b,
+  .shorttrade-item-c,
+  .shorttrade-item-d,
+  .shorttrade-item-e {
+    grid-column: span 1;
+  }
+
+  .shorttrade-analytics-interface,
+  .shorttrade-risk-interface {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .shorttrade-chart-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .shorttrade-feature {
+    padding: 40px 20px;
+  }
+
+  .shorttrade-title {
+    font-size: 36px;
+  }
+
+  .shorttrade-features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 400px;
+  }
+
+  .shorttrade-card-title {
+    font-size: 22px;
+  }
+
+  .shorttrade-card-description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shorttrade-feature {
+    padding: 30px 15px;
+  }
+
+  .shorttrade-title {
+    font-size: 28px;
+  }
+
+  .shorttrade-subtitle {
+    font-size: 14px;
+  }
+
+  .shorttrade-badge {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+
+  .shorttrade-card-header {
+    min-height: 150px;
+  }
+
+  .shorttrade-feature-card.shorttrade-item-a,
+  .shorttrade-feature-card.shorttrade-item-b,
+  .shorttrade-feature-card.shorttrade-item-c {
+    height: auto;
+    max-height: none;
+  }
+}

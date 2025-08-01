@@ -1,0 +1,48 @@
+.total-views-container {
+  background: rgb(31, 29, 29);
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 300px;
+  margin: auto auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  max-height: 254px;
+  box-shadow: 0 15px 85px rgba(186, 164, 235, 0.4),
+    0 -15px 85px rgba(186, 164, 235, 0.4), 2px 0 8px rgba(186, 164, 235, 0.1),
+    -2px 0 8px rgba(186, 164, 235, 0.1);
+}
+
+.total-views-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.total-views-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.total-views-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.total-views-pill {
+  width: 50px;
+  height: 10px;
+  background-color: #c084fc;
+  border-radius: 10px;
+}
+
+.total-views-dropdown-icon {
+  font-size: 10px;
+  color: #a78bfa;
+  transform: translateY(-1px);
+}

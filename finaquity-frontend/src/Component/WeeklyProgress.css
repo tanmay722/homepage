@@ -1,0 +1,199 @@
+/* Weekly Progress Component Styles */
+.weekly-progress-container {
+  background: rgb(31, 29, 29);
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 300px;
+  margin: auto auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  max-height: 254px;
+  box-shadow: 0 15px 85px rgba(186, 164, 235, 0.4),
+    0 -15px 85px rgba(186, 164, 235, 0.4), 2px 0 8px rgba(186, 164, 235, 0.1),
+    -2px 0 8px rgba(186, 164, 235, 0.1);
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.subtitle-progress {
+  color: white;
+  font-size: 14px;
+  margin: 4px 0 0 0;
+  text-align: left;
+  width: 100%;
+  font-weight: 600;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: #c4b5fd;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.2s ease;
+}
+
+.menu-button:hover {
+  color: white;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Circular Progress Styles */
+.circular-progress {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stats Section */
+.stats-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 32px;
+}
+
+/* Progress Bars */
+.progress-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.progress-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-gray {
+  background-color: #9ca3af;
+}
+
+.dot-purple {
+  background-color: #a78bfa;
+}
+
+.progress-bar-track {
+  flex: 1;
+  background-color: #374151;
+  border-radius: 9999px;
+  height: 9px;
+}
+
+.progress-bar-fill {
+  height: 9px;
+  border-radius: 9999px;
+  transition: width 0.5s ease-out;
+}
+
+.fill-gray {
+  background-color: #9ca3af;
+}
+
+.fill-purple {
+  background: linear-gradient(90deg, #a78bfa 0%, #c4b5fd 100%);
+}
+
+/* Increase Indicator */
+.increase-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.increase-value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.increase-value.positive {
+  color: #4ade80;
+}
+
+.increase-value.negative {
+  color: #f87171;
+}
+
+.info-icon {
+  background-color: rgba(139, 92, 246, 0.5);
+  border-radius: 50%;
+  padding: 4px;
+  color: #7266a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .weekly-progress-container {
+    padding: 20px;
+    margin: 0 16px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .stats-section {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .progress-bars {
+    margin-bottom: 24px;
+  }
+}
+
+/* Animation for initial load */
+@keyframes progressAnimation {
+  from {
+    stroke-dashoffset: 283; /* Full circle circumference */
+  }
+  to {
+    stroke-dashoffset: var(--progress-offset);
+  }
+}
+
+.progress-circle {
+  animation: progressAnimation 1.5s ease-out;
+}
